@@ -7,18 +7,44 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Letter animation</title>
   <link rel="stylesheet" href="styles.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/gsap.min.js"></script>
 </head>
 
 <body>
-
   <div class="container">
     <h1>
-      <span>W</span>
-      <span>O</span>
-      <span>R</span>
-      <span>D</span>
+      <span class="W">W</span>
+      <span class="O">O</span>
+      <span class="R">R</span>
+      <span class="D">D</span>
     </h1>
   </div>
+
+<script>
+  gsap.to(".W",{
+    duration: 1,
+    repeat:-1,
+    rotation: 360,
+    });
+    gsap.to(".O",{
+    duration: 1,
+    delay: 1,
+    repeat:-1,
+    rotation: 360,
+    });
+    gsap.to(".R",{
+    duration: 1,
+    delay: 2,
+    repeat:-1,
+    rotation: 360,
+    });
+    gsap.to(".D",{
+    duration: 1,
+    delay: 3,
+    repeat:-1,
+    rotation: 360,
+    });
+</script>
 
 </body>
 

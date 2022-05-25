@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Letter animation</title>
+  <link rel="stylesheet" href="styles.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/gsap.min.js"></script>
+</head>
+
+<body>
+  <button id="play" onclick="myTimeline.play()">Play</button>
+  <button id="stop" onclick="myTimeline.pause()">Pause</button>
+  <button id="reverse" onclick="myTimeline.reverse()">Reverse</button>
+  <div class="container">
+    <h1>
+      <span class="a">W</span>
+      <span class="b">A</span>
+      <span class="c">Z</span>
+      <span class="d">Z</span>
+      <span class="e">A</span>
+      <span class="f">P</span>
+    </h1>
+  </div>
+
+<script>
+
+  const myDuration = 1
+  const myTimeline = new gsap.timeline({
+    repeat: -1,
+    yoyo: true
+  });
+
+  myTimeline.to(".a", {duration: myDuration, scale: 0.1, ease: "bounce.out"});
+  myTimeline.to(".b", {duration: myDuration, scale: 0.1, ease: "bounce.out"});
+  myTimeline.to(".c", {duration: myDuration, scale: 0.1, ease: "bounce.out"});
+  myTimeline.to(".d", {duration: myDuration, scale: 0.1, ease: "bounce.out"});
+  myTimeline.to(".e", {duration: myDuration, scale: 0.1, ease: "bounce.out"});
+  myTimeline.to(".f", {duration: myDuration, scale: 0.1, ease: "bounce.out"});
+</script>
+
+</body>
+
+</html>

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="grid.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/gsap.min.js"></script>
+  <title>CSS Grid</title>
+</head>
+<body>
+  <div class="grid">
+    <div class="grid-red"></div>
+    <div class="grid-blue"></div>
+    <div class="grid-green"></div>
+    <div class="grid-yellow"></div>
+  </div>
+  <script>
+
+    gsap.to(".grid-red", {
+      rotate: (90),
+    duration: 2.5,
+    repeat: -1,
+    y: 131,
+
+    });
+    gsap.to(".grid-blue", {
+      rotate: (90),
+    duration: 2.5,
+    repeat: -1,
+    y: -100,
+
+    });
+    gsap.to(".grid-green", {
+      
+      rotate: (90),
+    duration: 2.5,
+    repeat: -1,
+    scaleY: 3,
+    y: 160,
+
+
+    });
+    gsap.to(".grid-yellow", {
+      rotate: (90),
+    repeat: -1,
+    duration: 2.5,
+    scaleY: 0.6,
+    y: -235
+    });
+
+  </script>
+</body>
+</html>
